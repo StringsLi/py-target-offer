@@ -25,12 +25,12 @@ class Solution:
                 return i
 
 
-nums = [2, 3, 1, 0, 2, 5, 3]
-sl = Solution()
-res = sl.findRepeatNumber(nums)
-res2 = sl.findRepeatNumberII(nums)
-
-print(res)
+if __name__ == '__main__':
+    nums = [2, 3, 1, 0, 2, 5, 3]
+    sl = Solution()
+    res = sl.findRepeatNumber(nums)
+    res2 = sl.findRepeatNumberII(nums)
+    print(res, "==>", res2)
 
 
 
