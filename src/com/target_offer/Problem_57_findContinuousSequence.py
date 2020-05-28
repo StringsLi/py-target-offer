@@ -2,7 +2,7 @@ from  typing import List
 
 class Solution:
     def findContinuousSequence(self, target: int) -> List[List[int]]:
-        tmp=[]
+        tmp = []
         for i in range(1, target):
             max_ = i
             for j in range(i+1, target):
