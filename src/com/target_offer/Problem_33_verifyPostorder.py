@@ -12,6 +12,8 @@
 """
 
 from typing import List
+
+
 class Solution:
     def help(self, sequence):
         if len(sequence) <= 1:
@@ -31,9 +33,7 @@ class Solution:
         return self.help(postorder)
 
 
-
-
-postorder = [1,3,2,6,5]
+postorder = [1, 3, 2, 6, 5]
 obj = Solution()
 
 res = obj.verifyPostorder(postorder)

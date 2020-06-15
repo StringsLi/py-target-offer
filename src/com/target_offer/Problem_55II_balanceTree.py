@@ -12,7 +12,7 @@ class Solution:
         else:
             return False
 
-    def depth(self,root:TreeNode) -> int:
+    def depth(self, root: TreeNode) -> int:
         if not root:
             return 0
         left = self.depth(root.left)

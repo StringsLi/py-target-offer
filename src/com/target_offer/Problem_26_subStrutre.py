@@ -3,6 +3,7 @@
 然后判断树A中以R为根节点的子树是否包含和B一样的结构
 """
 
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -43,5 +44,5 @@ root1.left = TreeNode(9)
 
 sl = Solution()
 
-res = sl.isSubStructure(root,None)
+res = sl.isSubStructure(root, None)
 print(res)

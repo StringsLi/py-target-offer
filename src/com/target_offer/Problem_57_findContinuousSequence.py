@@ -1,16 +1,17 @@
-from  typing import List
+from typing import List
+
 
 class Solution:
     def findContinuousSequence(self, target: int) -> List[List[int]]:
         tmp = []
         for i in range(1, target):
             max_ = i
-            for j in range(i+1, target):
+            for j in range(i + 1, target):
                 max_ += j
                 if max_ > target:
                     break
                 if max_ == target:
-                    tmp.append([k for k in range(i, j+1)])
+                    tmp.append([k for k in range(i, j + 1)])
         return tmp
 
     def findContinuousSequence2(self, target: int) -> List[List[int]]:
@@ -19,7 +20,7 @@ class Solution:
 
         def sum_(start, end):
             # return (end - start + 1) * (end + start) / 2
-            return sum(range(start, end+1))
+            return sum(range(start, end + 1))
 
         start = 1
         end = 2

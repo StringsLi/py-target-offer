@@ -3,6 +3,8 @@ from typing import List
 """
 基于左侧和右侧和来计算
 """
+
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         L = [1] * len(nums)

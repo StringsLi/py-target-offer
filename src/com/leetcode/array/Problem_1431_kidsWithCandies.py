@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         res = [True] * len(candies)
@@ -14,7 +16,6 @@ class Solution:
         maxCandies = max(candies)
         ret = [candy + extraCandies >= maxCandies for candy in candies]
         return ret
-
 
 
 if __name__ == '__main__':

@@ -8,10 +8,12 @@
 
 """
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
@@ -40,4 +42,4 @@ head.next.next.next = ListNode(4)
 
 obj = Solution()
 
-res = obj.removeNthFromEnd(head,2)
+res = obj.removeNthFromEnd(head, 2)

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
         edges = [[] for _ in range(n)]
@@ -19,6 +20,7 @@ class Solution:
                     stack.append(v)
         return cost
 
+
 def minReorder2(n: int, connections: List[List[int]]) -> int:
     edges = [[] for _ in range(n)]
     for a, b in connections:
@@ -33,10 +35,12 @@ def minReorder2(n: int, connections: List[List[int]]) -> int:
             cost += c
             cost += dfs(x, root)
         return cost
+
     return dfs(0, -1)
+
 
 if __name__ == '__main__':
     n = 6
     connections = [[0, 1], [1, 3], [2, 3], [4, 0], [4, 5]]
     obj = Solution()
-    print(minReorder2(n,connections))
+    print(minReorder2(n, connections))

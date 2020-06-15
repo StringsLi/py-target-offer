@@ -3,6 +3,7 @@
 
 """
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -10,7 +11,7 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(self, l1: ListNode, l2: ListNode)->ListNode:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode(0)
         p = dummy
 
@@ -33,14 +34,15 @@ class Solution:
         if not l1:
             return l2
         if not l2:
-           return l1
+            return l1
 
         if l1.val < l2.val:
             l1.next = self.mergeTwoLists2(l1.next, l2)
             return l1
         else:
-            l2.next = self.mergeTwoLists2(l1,l2.next)
+            l2.next = self.mergeTwoLists2(l1, l2.next)
             return l2
+
 
 head = ListNode(1)
 head.next = ListNode(2)
@@ -54,9 +56,8 @@ head1.next.next.next = ListNode(4)
 
 obj = Solution()
 
-res = obj.mergeTwoLists2(head,head1)
+res = obj.mergeTwoLists2(head, head1)
 
 while res:
     print(res.val)
     res = res.next
-

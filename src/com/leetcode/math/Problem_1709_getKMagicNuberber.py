@@ -15,16 +15,17 @@
 
 """
 
+
 class Solution:
     def getKthMagicNumber(self, k: int) -> int:
         dp = [1] * k
-        u3,u5,u7 = 0, 0, 0
-        for i in range(1,k):
-            dp[i] = min(dp[u3]*3,min(dp[u5]*5,dp[u7]*7))
+        u3, u5, u7 = 0, 0, 0
+        for i in range(1, k):
+            dp[i] = min(dp[u3] * 3, min(dp[u5] * 5, dp[u7] * 7))
             if dp[i] == dp[u3] * 3:
                 u3 += 1
             if dp[i] == dp[u5] * 5:
                 u5 += 1
             if dp[i] == dp[u7] * 7:
                 u7 += 1
-        return dp[k-1]
+        return dp[k - 1]

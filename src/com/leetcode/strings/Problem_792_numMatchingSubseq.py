@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def is_sequence(self, word, S):
         index = 0
@@ -14,17 +15,13 @@ class Solution:
     def numMatchingSubseq(self, S: str, words: List[str]) -> int:
         count = 0
         for w in words:
-            if self.is_sequence(w,S):
+            if self.is_sequence(w, S):
                 count += 1
         return count
+
 
 S = "abcde"
 words = ["a", "bb", "acd", "ace"]
 obj = Solution()
-res = obj.numMatchingSubseq(S,words)
+res = obj.numMatchingSubseq(S, words)
 print(res)
-
-
-
-
-

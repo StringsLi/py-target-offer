@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         if not nums:
@@ -34,7 +35,7 @@ class Solution:
                     i -= 1
                 while j <= len(nums) - 1 and nums[j] == target:
                     j += 1
-                return [i+1, j-1]
+                return [i + 1, j - 1]
             elif nums[mid] > target:
                 right = mid - 1
             else:
@@ -43,7 +44,7 @@ class Solution:
         return [-1, -1]
 
 
-nums = [5,7,7,8,8,10]
+nums = [5, 7, 7, 8, 8, 10]
 
 obj = Solution()
 

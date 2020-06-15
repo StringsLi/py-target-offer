@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def exchange(self, nums: List[int]) -> List[int]:
         odd = filter(lambda x: x % 2 == 1, nums)

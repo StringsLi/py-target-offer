@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         def dfs(i, j, k):
@@ -17,11 +19,11 @@ class Solution:
                     return True
         return False
 
+
 board = [
-    ["A","B","C","E"],
-    ["S","F","C","S"],
-    ["A","D","E","E"]]
+    ["A", "B", "C", "E"],
+    ["S", "F", "C", "S"],
+    ["A", "D", "E", "E"]]
 word = "ABCCED"
 obj = Solution()
-print(obj.exist(board,word))
-
+print(obj.exist(board, word))

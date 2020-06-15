@@ -18,6 +18,7 @@ from typing import List
 链接：https://leetcode-cn.com/problems/group-anagrams
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。"""
 
+
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         dic = {}
@@ -28,6 +29,7 @@ class Solution:
             else:
                 dic[keys].append(s)
         return list(dic.values())
+
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 obj = Solution()

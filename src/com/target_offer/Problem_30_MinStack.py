@@ -1,4 +1,3 @@
-
 """
 对原栈和辅助栈的处理过程如下：
 
@@ -44,4 +43,3 @@ param_3 = obj.top()
 print(param_3)
 param_4 = obj.min()
 print(param_4)
-

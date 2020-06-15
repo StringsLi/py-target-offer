@@ -1,5 +1,5 @@
 class Solution:
-    def compress(self, chars)->int:
+    def compress(self, chars) -> int:
         anchor = write = 0
         for read, c in enumerate(chars):
             if read + 1 == len(chars) or chars[read + 1] != c:
@@ -11,7 +11,9 @@ class Solution:
                         write += 1
                 anchor = read + 1
         return write
-chars =["a","a","b","b","c","c","c"]
+
+
+chars = ["a", "a", "b", "b", "c", "c", "c"]
 obj = Solution()
 res = obj.compress(chars)
 

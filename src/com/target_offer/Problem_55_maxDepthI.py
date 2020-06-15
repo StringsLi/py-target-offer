@@ -5,14 +5,15 @@ Created on Fri Feb 14 17:52:37 2020
 @author: lixin
 """
 
-
 from typing import List
+
 
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution:
     def maxDepth(self, root: TreeNode) -> List[int]:
@@ -29,7 +30,7 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
             count += 1
-                    
+
         return count
 
 

@@ -23,5 +23,6 @@ class Solution:
             number //= 10
         return number % 10
 
+
 obj = Solution()
 print(obj.findNthDigit(11))

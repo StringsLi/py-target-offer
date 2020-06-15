@@ -31,6 +31,3 @@ if __name__ == '__main__':
     res = sl.findRepeatNumber(nums)
     res2 = sl.findRepeatNumberII(nums)
     print(res, "==>", res2)
-
-
-

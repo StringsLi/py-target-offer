@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         if not nums:
@@ -11,7 +13,8 @@ class Solution:
                     dp[i] = max(dp[i], dp[j] + 1)
         return max(dp)
 
-nums = [10,9,2,5,3,7,101,18]
+
+nums = [10, 9, 2, 5, 3, 7, 101, 18]
 obj = Solution()
 res = obj.lengthOfLIS(nums)
 print(res)

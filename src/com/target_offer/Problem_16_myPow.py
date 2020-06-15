@@ -1,4 +1,3 @@
-
 class Solution():
     def myPow(self, x: float, n: int) -> float:
         if n == 0:
@@ -11,5 +10,5 @@ class Solution():
 
 
 obj = Solution()
-res = obj.myPow(2.0,10)
+res = obj.myPow(2.0, 10)
 print(res)

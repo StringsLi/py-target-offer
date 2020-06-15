@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
         if nums == []:
@@ -6,7 +8,7 @@ class Solution:
         max_all = []
         num_nums = len(nums)
         for i in range(num_nums - k + 1):
-            max_all.append(max(nums[i:i+k]))
+            max_all.append(max(nums[i:i + k]))
         return max_all
 
 

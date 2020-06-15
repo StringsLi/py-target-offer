@@ -1,5 +1,6 @@
-
 from typing import List
+
+
 class Solution:
     def reversePairs(self, nums: List[int]) -> int:
         self.count = 0
@@ -34,6 +35,7 @@ class Solution:
         sort(0, len(nums) - 1)
         return self.count
 
-nums = [7,5,6,4]
+
+nums = [7, 5, 6, 4]
 obj = Solution()
 print(obj.reversePairs(nums))

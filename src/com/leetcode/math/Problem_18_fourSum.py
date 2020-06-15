@@ -25,7 +25,8 @@ def fourSum(nums, target):
         rec.append(list(i))
     return rec
 
+
 nums = [1, 0, -1, 0, -2, 2]
-res = fourSum(nums,0)
+res = fourSum(nums, 0)
 
 print(res)

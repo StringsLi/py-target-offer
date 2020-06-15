@@ -5,6 +5,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Codec:
 
     def r_serialize(self, root, str1):
@@ -24,8 +25,7 @@ class Codec:
         """
         return self.r_serialize(root, "")
 
-
-    def r_deserialize(self,lst):
+    def r_deserialize(self, lst):
         if lst[0] == "None":
             lst.remove(lst[0])
             return None

@@ -1,6 +1,7 @@
 class Solution:
     def translateNum(self, num: int) -> int:
         cnt = 0
+
         def helper(s):
             nonlocal cnt
             if not s:
@@ -14,7 +15,7 @@ class Solution:
         helper(str(num))
         return cnt
 
-    def numDecodings(self,s: str) -> int:
+    def numDecodings(self, s: str) -> int:
         strNums = s
         size = len(strNums)
         dp = [1] + [0] * size

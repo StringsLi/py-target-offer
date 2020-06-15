@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution(object):
     def orangesRotting(self, grid):
 
@@ -46,16 +47,17 @@ class Solution(object):
         while stack:
             i, j, time = stack.pop(0)
             for loc in locs:
-                loc_i, loc_j = i+loc[0], j+loc[1]
+                loc_i, loc_j = i + loc[0], j + loc[1]
                 if 0 <= loc_i < x and 0 <= loc_j < y and grid[loc_i][loc_j] == 1:
                     grid[loc_i][loc_j] = 2
-                    stack.append((loc_i, loc_j, time+1))
+                    stack.append((loc_i, loc_j, time + 1))
         for g in grid:
             if 1 in g:
                 return -1
         return time
 
-grid = [[2,1,1],[1,1,0],[0,1,1]]
+
+grid = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
 obj = Solution()
 res = obj.orangesRotting2(grid)
 print(res)

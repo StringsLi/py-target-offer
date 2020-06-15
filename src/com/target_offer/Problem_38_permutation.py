@@ -1,5 +1,6 @@
 from typing import List
 
+
 def permutation(s: str) -> List[str]:
     if not s: return
     s = list(sorted(s))
@@ -14,6 +15,7 @@ def permutation(s: str) -> List[str]:
 
     helper(s, [])
     return res
+
 
 def permuteUnique2(nums: List[int]) -> List[List[int]]:
     res = []
@@ -31,6 +33,5 @@ def permuteUnique2(nums: List[int]) -> List[List[int]]:
     return res
 
 
-
 print(permutation('abc'))
-print(permuteUnique2([1,2,2]))
+print(permuteUnique2([1, 2, 2]))

@@ -5,14 +5,15 @@ Created on Fri Feb 14 13:19:42 2020
 @author: lixin
 """
 
-
 from typing import List
+
 
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
@@ -35,8 +36,9 @@ class Solution:
             if flag % 2 == 0:
                 level.reverse()
             res.append(level)
-                    
+
         return res
+
 
 root = TreeNode(3)
 root.left = TreeNode(9)

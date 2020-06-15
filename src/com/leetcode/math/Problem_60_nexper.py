@@ -48,6 +48,7 @@ class Solution:
         res = list(map(str, res + l))
         return ''.join(res)
 
+
 obj = Solution()
-res = obj.getPermutation(3,3)
+res = obj.getPermutation(3, 3)
 print(res)

@@ -1,4 +1,6 @@
 from typing import List
+
+
 class Solution:
     def isStraight(self, nums: List[int]) -> bool:
         gost = 0
@@ -13,7 +15,8 @@ class Solution:
                 gost -= (nums[i + 1] - nums[i] - 1)
         return gost >= 0
 
-nums = [0,0,0,0,0]
+
+nums = [0, 0, 0, 0, 0]
 
 obj = Solution()
 ress = obj.isStraight(nums)

@@ -3,10 +3,12 @@
 
 """
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
 
 class Solution:
     def deleteNode(self, head: ListNode, val: int) -> ListNode:
@@ -30,4 +32,3 @@ head.next.next.next = ListNode(4)
 obj = Solution()
 
 res = obj.deleteNode(head, 4)
-

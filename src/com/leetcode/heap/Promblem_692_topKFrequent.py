@@ -1,6 +1,8 @@
 from collections import Counter
 import heapq
 from typing import List
+
+
 class Solution:
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
         count = {}
@@ -13,6 +15,7 @@ class Solution:
         for i, w in enumerate(words):
             count[w] = count.get(i, 0) + 1
         return heapq.nlargest(k, count, lambda i: (count[i], i))
+
 
 words = ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"]
 k = 4

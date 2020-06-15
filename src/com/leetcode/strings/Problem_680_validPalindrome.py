@@ -17,6 +17,3 @@ class Solution:
             else:
                 return checkPalindrome(low + 1, high) or checkPalindrome(low, high - 1)
         return True
-
-
-

@@ -3,6 +3,7 @@
 
 """
 
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -10,7 +11,7 @@ class ListNode:
 
 
 class Solution:
-    def getKthFromEnd(self, head:ListNode, k:int)->ListNode:
+    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
         if not head:
             return None
         fast = head
@@ -26,6 +27,7 @@ class Solution:
             slow = slow.next
         return slow
 
+
 head = ListNode(1)
 head.next = ListNode(2)
 head.next.next = ListNode(3)
@@ -33,9 +35,8 @@ head.next.next.next = ListNode(4)
 
 obj = Solution()
 
-res = obj.getKthFromEnd(head,2)
+res = obj.getKthFromEnd(head, 2)
 
 while res:
     print(res.val)
     res = res.next
-
