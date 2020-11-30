@@ -3,6 +3,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     def removeDuplicateNodes(self, head: ListNode) -> ListNode:
         if not head:

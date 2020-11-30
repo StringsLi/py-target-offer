@@ -1,5 +1,3 @@
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -16,16 +14,15 @@ class BSTIterator:
             inorder(root.right)
             self.nums.append(root.val)
             inorder(root.left)
+
         self.nums = []
         inorder(root)
-
 
     def next(self) -> int:
         """
         @return the next smallest number
         """
         return self.nums.pop()
-
 
     def hasNext(self) -> bool:
         """

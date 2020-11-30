@@ -5,6 +5,7 @@ Created on Sat Feb  1 17:50:21 2020
 @author: lixin
 """
 
+
 class Solution:
     def numberToWords(self, num: int) -> str:
         to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
@@ -23,6 +24,7 @@ class Solution:
                     return helper(num // 1000 ** p) + [w] + helper(num % 1000 ** p)
 
         return " ".join(helper(num)) or "Zero"
-    
+
+
 sl = Solution()
 pr = sl.numberToWords(54666)

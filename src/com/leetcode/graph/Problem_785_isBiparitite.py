@@ -31,6 +31,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    lst = [[1,3], [0,2], [1,3], [0,2]]
+    lst = [[1, 3], [0, 2], [1, 3], [0, 2]]
     obj = Solution()
     print(obj.isBipartite(lst))

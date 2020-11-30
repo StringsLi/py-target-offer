@@ -7,7 +7,7 @@ class Solution:
         n = len(grid[0])
         if m == 0 or n == 0:
             return 0
-        dp =  [[0] * n for _ in range(m)]
+        dp = [[0] * n for _ in range(m)]
         dp[0][0] = grid[0][0]
 
         for i in range(1, m):
@@ -25,5 +25,5 @@ class Solution:
 
 if __name__ == '__main__':
     obj = Solution()
-    grid =[[1,2,5],[3,2,1]]
+    grid = [[1, 2, 5], [3, 2, 1]]
     print(obj.minPathSum(grid))

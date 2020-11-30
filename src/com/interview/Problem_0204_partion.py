@@ -20,5 +20,5 @@ if __name__ == '__main__':
 
     obj = Solution()
 
-    node = obj.partition(head,2)
+    node = obj.partition(head, 2)
     print()

@@ -1,5 +1,5 @@
-from typing import List
 import heapq
+from typing import List
 
 
 class Solution:
@@ -17,4 +17,4 @@ if __name__ == '__main__':
                  [12, 13, 15]
              ],
     k = 8
-    obj.kthSmallest(matrix,k)
+    obj.kthSmallest(matrix, k)

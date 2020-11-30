@@ -1,5 +1,6 @@
-import collections
 from functools import lru_cache
+
+import collections
 
 
 class Solution:

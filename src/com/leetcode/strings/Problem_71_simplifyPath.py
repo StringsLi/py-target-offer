@@ -1,4 +1,3 @@
-
 class Solution:
     def simplifyPath(self, path: str) -> str:
         path = path.strip("/").split("/")

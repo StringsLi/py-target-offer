@@ -7,13 +7,11 @@ class MyQueue:
         self.A = []
         self.B = []
 
-
     def push(self, x: int) -> None:
         """
         Push element x to the back of queue.
         """
         self.A.append(x)
-
 
     def pop(self) -> int:
         """
@@ -24,7 +22,6 @@ class MyQueue:
                 self.B.append(self.A.pop())
         return self.B.pop()
 
-
     def peek(self) -> int:
         """
         Get the front element.
@@ -34,11 +31,10 @@ class MyQueue:
                 self.B.append(self.A.pop())
         return self.B[-1]
 
-
     def empty(self) -> bool:
         """
         Returns whether the queue is empty.
         """
-        if len(self.A)==0 and len(self.B)==0:
+        if len(self.A) == 0 and len(self.B) == 0:
             return True
         return False

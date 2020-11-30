@@ -8,6 +8,7 @@ class Solution:
                 s = [i + r.val for i in s] + [r.val]
                 return s.count(sum) + f(r.left, s) + f(r.right, s)
             return 0
+
         return f(root, [])
 
         def pathSum2(self, root: TreeNode, sum: int) -> int:
@@ -40,4 +41,4 @@ if __name__ == '__main__':
     node.left.left.right = TreeNode(2)
 
     obj = Solution()
-    print(obj.pathSum(root=node,sum=22))
+    print(obj.pathSum(root=node, sum=22))

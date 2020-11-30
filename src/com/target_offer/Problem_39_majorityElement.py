@@ -5,7 +5,6 @@ Created on Thu Feb 13 11:21:55 2020
 @author: lixin
 """
 
-from collections import Counter
 from typing import List
 
 
