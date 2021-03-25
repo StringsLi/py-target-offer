@@ -20,10 +20,12 @@ class Solution:
         return False
 
 
-board = [
-    ["A", "B", "C", "E"],
-    ["S", "F", "C", "S"],
-    ["A", "D", "E", "E"]]
-word = "ABCCED"
-obj = Solution()
-print(obj.exist(board, word))
+if __name__ == '__main__':
+
+    board = [
+        ["A", "B", "C", "E"],
+        ["S", "F", "C", "S"],
+        ["A", "D", "E", "E"]]
+    word = "ABCCED"
+    obj = Solution()
+    print(obj.exist(board, word))

@@ -28,15 +28,17 @@ class Solution:
         return slow
 
 
-head = ListNode(1)
-head.next = ListNode(2)
-head.next.next = ListNode(3)
-head.next.next.next = ListNode(4)
+if __name__ == '__main__':
 
-obj = Solution()
+    head = ListNode(1)
+    head.next = ListNode(2)
+    head.next.next = ListNode(3)
+    head.next.next.next = ListNode(4)
 
-res = obj.getKthFromEnd(head, 2)
+    obj = Solution()
 
-while res:
-    print(res.val)
-    res = res.next
+    res = obj.getKthFromEnd(head, 2)
+
+    while res:
+        print(res.val)
+        res = res.next
